@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: lightslategray;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "left right"
+    "footer footer";
+  margin: 10px;
+  gap: 10px;
+  grid-template-rows: 150px 100px 600px 200px;
+  position: relative;
+  /* grid-template-areas proprietatea vă permite să denumiți 
+  secțiuni ale paginii web pentru a le utiliza ca valori în
+grid-row-start, grid-row-end, grid-column-start, grid-column-end 
+și grid-area proprietăți. Această proprietate este declarată pe 
+containere de tip grid. */
+}
+
+h2 {
+    font-family: monospace;
+    margin-top: 10px;
+    text-align: center;
+}
+
+header {
+  background-color: darkgreen;
+  grid-area: header;
+}
+
+nav {
+  background-color: darkgreen;
+  grid-area: nav;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.left {
+  background-color: darkgreen;
+  grid-area: left;
+}
+
+.right {
+  background-color: darkgreen;
+  grid-area: right;
+}
+
+footer {
+  background-color: darkgreen;
+  grid-area: footer;
+}
+
+
+
+.container2 {
+                 /* Overlap elements */
+    display: grid;
+    position: relative;
+    max-width: 100%;
+    grid-template: repeat(15, 1fr) / repeat(6, 1fr);
+    margin: 10px;
+    gap: 10px;
+}
+
+.header2 {
+    background-color: chocolate;
+    grid-area: 1 / 1 / 4 / 7;
+}
+
+.nav2 {
+    background-color: crimson;
+    grid-area: 4 / 1 / 6 / 7;
+}
+
+.left2 {
+    background-color: deeppink;
+    grid-area: 6 / 1 / 12  / 4;
+}
+
+.right2 {
+    background-color: wheat;
+    grid-area: 6 / 4 / 12 / 7;
+}
+
+.overlap {
+    background-color: palegreen;
+    grid-area: 7/ 3  / 11 / 5;
+}
+
+.footer2 {
+    background-color: coral;
+    grid-area: 12 / 1 / 16 / 7;
+}
+
+

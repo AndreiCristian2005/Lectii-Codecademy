@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Flexbox and Grid</h1>
+
+    <h1>Flexbox</h1>
+
+    <div class="display-flex">
+      <div class="box">
+        <h3>Box 1</h3>
+      </div>
+      <div class="box">
+        <h3>Box 2</h3>
+      </div>
+      <div class="box">
+        <h3>Box 3</h3>
+      </div>
+    </div>
+
+    <br />
+    <h1>Inline Flexbox</h1>
+    <div class="display-inline-flex">
+      <div class="box">
+        <h3>Box 1</h3>
+      </div>
+      <div class="box">
+        <h3>Box 2</h3>
+      </div>
+      <div class="box">
+        <h3>Box 3</h3>
+      </div>
+    </div>
+    <div class="display-inline-flex">
+      <div class="box">
+        <h3>Box 1</h3>
+      </div>
+      <div class="box">
+        <h3>Box 2</h3>
+      </div>
+      <div class="box">
+        <h3>Box 3</h3>
+      </div>
+    </div>
+    <hr />
+
+    <h1>Flex Start (default)</h1>
+    <div class="display-flex" id="flex-start">
+      <div class="box">
+        <h3>Box 1</h3>
+      </div>
+      <div class="box">
+        <h3>Box 2</h3>
+      </div>
+      <div class="box">
+        <h3>Box 3</h3>
+      </div>
+    </div>
+
+    <h1>Flex End</h1>
+    <div class="display-flex" id="flex-end">
+      <div class="box">
+        <h3>Box 1</h3>
+      </div>
+      <div class="box">
+        <h3>Box 2</h3>
+      </div>
+      <div class="box">
+        <h3>Box 3</h3>
+      </div>
+    </div>
+
+    <h1>Center</h1>
+    <div class="display-flex" id="center">
+      <div class="box">
+        <h3>Box 1</h3>
+      </div>
+      <div class="box">
+        <h3>Box 2</h3>
+      </div>
+      <div class="box">
+        <h3>Box 3</h3>
+      </div>
+    </div>
+
+    <h1>Space Between</h1>
+    <div class="display-flex" id="space-between">
+      <div class="box">
+        <h3>Box 1</h3>
+      </div>
+      <div class="box">
+        <h3>Box 2</h3>
+      </div>
+      <div class="box">
+        <h3>Box 3</h3>
+      </div>
+    </div>
+
+    <h1>Space Around</h1>
+    <div class="display-flex" id="space-around">
+      <div class="box">
+        <h3>Box 1</h3>
+      </div>
+      <div class="box">
+        <h3>Box 2</h3>
+      </div>
+      <div class="box">
+        <h3>Box 3</h3>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <h1>Align-items</h1>
+    <p>
+      flex-start— toate elementele vor fi poziționate în partea de sus a
+      containerului părinte.
+    </p>
+    <div class="align-items" id="flexstart">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
+    <br />
+    <br />
+    <p>
+      flex-end— toate elementele vor fi poziționate în partea de jos a
+      containerului părinte.
+    </p>
+    <div class="align-items" id="flexend">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
+    <br />
+    <br />
+    <p>
+      center— toate elementele vor fi poziționate în centrul containerului
+      părinte.
+    </p>
+    <div class="align-items" id="centers">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
+    <br />
+    <br />
+    <p>
+      baseline— toate elementele vor fi poziționate în partea de jos a
+      containerului părinte, dar vor fi aliniate pe baza liniei de bază a
+      textului.
+    </p>
+    <div class="align-items" id="baseline">
+      <div class="box-baseline">Lorem ipsum dolor sit amet.</div>
+      <div class="box-baseline">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+        exercitationem repellat.
+      </div>
+      <div class="box-baseline">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+        repellat.
+      </div>
+    </div>
+    <br />
+    <br />
+    <p>
+      stretch— toate elementele vor fi întinse pentru a ocupa întreaga înălțime
+      a containerului părinte.
+    </p>
+    <div class="align-items" id="stretch">
+      <div class="box-stretch"></div>
+      <div class="box-stretch"></div>
+      <div class="box-stretch"></div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1>Flex Grow</h1>
+    <div id="top-flex-grow">
+      <div class="top side"></div>
+      <div class="top center"></div>
+      <div class="top side"></div>
+    </div>
+
+    <div id="middle-flex-grow">
+      <div class="middle side"></div>
+      <div class="middle center"></div>
+      <div class="middle side"></div>
+    </div>
+
+    <div id="bottom-flex-grow">
+      <div class="bottom side"></div>
+      <div class="bottom center"></div>
+      <div class="bottom side"></div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1>Flex Shrink</h1>
+
+    <div id="top-flex-shrink">
+      <div class="one side"></div>
+      <div class="one center"></div>
+      <div class="one side"></div>
+    </div>
+
+    <br />
+
+    <div id="middle-flex-shrink">
+      <div class="two side"></div>
+      <div class="two center"></div>
+      <div class="two side"></div>
+    </div>
+
+    <br />
+
+    <div id="bottom-flex-shrink">
+      <div class="three side"></div>
+      <div class="three center"></div>
+      <div class="three side"></div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1>Flex Basis</h1>
+
+    <div id="top-flex-basis">
+      <div class="first side"></div>
+      <div class="first center"></div>
+      <div class="first side"></div>
+    </div>
+
+    <div id="middle-flex-basis">
+      <div class="second side"></div>
+      <div class="second center"></div>
+      <div class="second side"></div>
+    </div>
+
+    <div id="bottom-flex-basis">
+      <div class="last side"></div>
+      <div class="last center"></div>
+      <div class="last side"></div>
+    </div>
+
+    <br />
+    <br />
+
+    <div id="flex-top">
+      <div class="primary side"></div>
+      <div class="primary center"></div>
+      <div class="primary side"></div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1>Flex Wrap</h1>
+
+    <div class="wrap" id="flex-wrap">
+      <div class="boxes side"><h3>1</h3></div>
+      <div class="boxes center"><h3>2</h3></div>
+      <div class="boxes side"><h3>3</h3></div>
+      <div class="boxes side"><h3>4</h3></div>
+      <div class="boxes center"><h3>5</h3></div>
+      <div class="boxes side"><h3>6</h3></div>
+    </div>
+
+    <h1>Flex No Wrap</h1>
+    <div class="nowrap" id="flex-nowrap">
+      <div class="boxes side"><h3>1</h3></div>
+      <div class="boxes center"><h3>2</h3></div>
+      <div class="boxes side"><h3>3</h3></div>
+      <div class="boxes side"><h3>4</h3></div>
+      <div class="boxes center"><h3>5</h3></div>
+      <div class="boxes side"><h3>6</h3></div>
+    </div>
+
+    <h1>Flex Wrap Reverse</h1>
+    <div class="wrap-reverse" id="flex-wrap-reverse">
+      <div class="boxes side"><h3>1</h3></div>
+      <div class="boxes center"><h3>2</h3></div>
+      <div class="boxes side"><h3>3</h3></div>
+      <div class="boxes side"><h3>4</h3></div>
+      <div class="boxes center"><h3>5</h3></div>
+      <div class="boxes side"><h3>6</h3></div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1>Align-content</h1>
+
+    <h1>Flex Start</h1>
+
+    <div class="align-content" id="start">
+      <div class="content side"><h3>1</h3></div>
+      <div class="content center"><h3>2</h3></div>
+      <div class="content side"><h3>3</h3></div>
+      <div class="content side"><h3>4</h3></div>
+    </div>
+
+    <h1>Flex End</h1>
+    <div class="align-content" id="end">
+      <div class="content side"><h3>1</h3></div>
+      <div class="content center"><h3>2</h3></div>
+      <div class="content side"><h3>3</h3></div>
+      <div class="content side"><h3>4</h3></div>
+    </div>
+
+    <h1>Center</h1>
+    <div class="align-content" id="cen_ter">
+      <div class="content side"><h3>1</h3></div>
+      <div class="content center"><h3>2</h3></div>
+      <div class="content side"><h3>3</h3></div>
+      <div class="content side"><h3>4</h3></div>
+    </div>
+
+    <h1>Space Between</h1>
+    <div class="align-content" id="spacebetween">
+      <div class="content side"><h3>1</h3></div>
+      <div class="content center"><h3>2</h3></div>
+      <div class="content side"><h3>3</h3></div>
+      <div class="content side"><h3>4</h3></div>
+    </div>
+
+    <h1>Space Around</h1>
+    <div class="align-content" id="spacearound">
+      <div class="content side"><h3>1</h3></div>
+      <div class="content center"><h3>2</h3></div>
+      <div class="content side"><h3>3</h3></div>
+      <div class="content side"><h3>4</h3></div>
+    </div>
+
+    <h1>Stretch</h1>
+    <div class="align-content" id="stre_tch">
+      <div class="content side"><h3>1</h3></div>
+      <div class="content center"><h3>2</h3></div>
+      <div class="content side"><h3>3</h3></div>
+      <div class="content side"><h3>4</h3></div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1>Flex Direction</h1>
+    <h1>Row (default)</h1>
+    <div class="container-flex-direction" id="row">
+      <div class="element side"><h3>1</h3></div>
+      <div class="element center"><h3>2</h3></div>
+      <div class="element side"><h3>3</h3></div>
+      <div class="element side"><h3>4</h3></div>
+    </div>
+
+    <h1>Row Reverse</h1>
+    <div class="container-flex-direction" id="row-reverse">
+      <div class="element side"><h3>1</h3></div>
+      <div class="element center"><h3>2</h3></div>
+      <div class="element side"><h3>3</h3></div>
+      <div class="element side"><h3>4</h3></div>
+    </div>
+
+    <h1>Column</h1>
+    <div class="container-flex-direction" id="column">
+      <div class="element side"><h3>1</h3></div>
+      <div class="element center"><h3>2</h3></div>
+      <div class="element side"><h3>3</h3></div>
+      <div class="element side"><h3>4</h3></div>
+    </div>
+
+    <h1>Column Reverse</h1>
+    <div class="container-flex-direction" id="column-reverse">
+      <div class="element side"><h3>1</h3></div>
+      <div class="element center"><h3>2</h3></div>
+      <div class="element side"><h3>3</h3></div>
+      <div class="element side"><h3>4</h3></div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1>Flex Flow</h1>
+    <h1>Column Wrap</h1>
+    <div class="container-flex-flow" id="flex-flow-column-wrap">
+      <div class="element side"><h3>1</h3></div>
+      <div class="element center"><h3>2</h3></div>
+      <div class="element side"><h3>3</h3></div>
+      <div class="element side"><h3>4</h3></div>
+    </div>
+
+    <h1>Row-reverse Wrap</h1>
+    <div class="container-flex-flow" id="flex-flow-row-reverse-wrap">
+      <div class="element side"><h3>1</h3></div>
+      <div class="element center"><h3>2</h3></div>
+      <div class="element side"><h3>3</h3></div>
+      <div class="element side"><h3>4</h3></div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1>Flexbox Gallery</h1>
+    <p>
+      De asemenea, este posibil să poziționăm containere flexibile unele în
+      interiorul altora.
+    </p>
+    <div class="main">
+      <div class="containers">
+        <div class="small">
+          <img src="./assets/small1.jpeg" alt="Image 1" />
+          <p class="banner-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+            dicta!
+          </p>
+        </div>
+        <div class="small">
+          <img src="./assets/small2.png" alt="Image 2" />
+          <p class="banner-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+            dicta!
+          </p>
+        </div>
+        <div class="small">
+          <img src="./assets/small3.jpeg" alt="Image 3" />
+          <p class="banner-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+            dicta!
+          </p>
+        </div>
+      </div>
+      <div class="containers">
+        <div class="large"><img src="./assets/large.jpeg" alt="Image 4" /></div>
+        <p class="banner2-paragraph">Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </body>
+</html>

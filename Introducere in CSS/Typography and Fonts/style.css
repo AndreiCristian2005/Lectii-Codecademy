@@ -1,0 +1,47 @@
+/* @font-face {
+    font-family: 'Space mono';
+    src: url(aici adaug link-urile de fonts);
+    Se pot lua de pe google fonts trebuie instalate
+    si puse intr-un folder in acest fisier
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0 0 0 0.5rem;
+}
+
+h1 {
+  /* Candara si sans-serif sunt fonturi de rezerva daca nu merge prima sau a doua */
+  font-family: Impact, "Candara", sans-serif;
+}
+
+.grosime {
+  font-weight: bold;
+  line-height: 1.5;
+  /* line-height spatiaza randurile */
+  font-family: "Space mono", monospace;
+  /* am adaugat un link de pe google fonts */
+}
+
+.grosime-numere {
+  font-weight: 500;
+  /* folosim font-style pentru stilizare textului */
+  font-style: italic;
+}
+
+.majuscule-1 {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  /*  letter-spacing spatiaza literele una de alta */
+}
+
+.majuscule-2 {
+  text-transform: lowercase;
+  word-spacing: 0.7em;
+  /* word-spacing spatiaza cuvintele intre ele */
+}
+
+.text-align {
+  text-align: center;
+  /* text-align aliniaza elementele la centrul parintelui */
+}

@@ -1,0 +1,75 @@
+* {
+  /* Acestea sunt reguli de resetare adica lucrez de la 0 complet fara a avea vreun element html margin sau padding*/
+  margin: 0; 
+  padding: 0;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  background-color: red;
+  border-radius: 15px;
+  margin: 50px;
+}
+
+.box p {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.outside-box {
+  border: 5px solid blue;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /* padding: 10px 20px 30px 40px; 10 sus, 20 dreapta, 30 jos, 40 stanga  ca directia acului de ceasornic*/
+  /* padding: 10px 20px 30px; 10 este pentru sus, 20 pentru dreapta si stanga, 30 pentru jos */
+  /* padding: 10px 20px; 10 este pentru sus si jos,iar 20 pentru stanga si dreapta */
+}
+
+/* Puteți centra orizontal un element în cadrul părintelui său prin setarea margin: 0 auto; */
+/* margin: 0 autocentrează orizontal un element în interiorul zonei sale de conținut părinte, dacă aceasta are o lățime. */
+
+ul li {
+  padding: 5px 10px;
+  margin: 10px 20px;
+}
+
+.one-circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.two-circle {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  margin: 40px;
+}
+
+img {
+  min-width: 100px;
+  max-width: 300px;
+  min-height: 100px;
+  max-height: 300px;
+}
+
+.overflow {
+  width: 200px;
+  height: 200px;
+  overflow: scroll;
+  /* overflow-y: scroll;
+  overflow-x: scroll; Documentatie pe w3schools.com sau Mdn */
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+

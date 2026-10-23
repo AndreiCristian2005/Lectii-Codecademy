@@ -1,0 +1,19 @@
+* {
+    /* Proprietatea CSS box-sizing definește modul de calculare a lățimii și înălțimii unui element: dacă calculul trebuie să includă sau nu padding și borders. */
+    box-sizing: border-box; 
+    /* lățime + padding + border = lățimea reală a unui element
+    înălțime + padding + border = înălțimea reală a unui element */
+}
+
+.div1 {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+}
+.div2 {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+}

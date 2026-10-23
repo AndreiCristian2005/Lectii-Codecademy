@@ -1,0 +1,65 @@
+* {
+  border: 1px solid red;
+}
+
+/* Acestea doua de dedesubt sunt clasele care se pot folosi in HTML pentru a stiliza textul.
+ Clasa "title" va schimba culoarea textului in teal,
+ iar clasa "font" va schimba fontul textului in Arial sau un font sans-serif. */
+
+.title {
+  color: teal;
+}
+
+.font {
+  font-family: "Arial", sans-serif;
+}
+
+#dimensiune {
+  font-size: 50px;
+}
+
+a[href*=tehnologie] {
+  color: red;
+}
+
+
+/* Cand tin cursorul deasupra linkurilor (Pseudo-clase :hover etc...) */
+a:hover {
+  color:  palevioletred;
+}
+
+.heading-background {
+  color: lightgreen;
+}
+
+#background-id {
+  background-color: lightblue;
+}
+
+h2 {
+  color: blue;
+}
+
+#specificitate {
+  color: red;
+}
+
+h2.destination {
+  font-family: Tahoma;
+}
+
+.description h1 {
+  color: purple;
+}
+
+li h5 {
+  color: orange;
+}
+
+h5 {
+  color: brown;
+}
+
+a, li {
+  font-family: Tahoma;
+}

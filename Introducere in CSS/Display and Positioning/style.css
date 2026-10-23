@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 4rem;
+}
+
+.nav {
+  background-color: #ff0000;
+  width: 100%;
+  height: 3rem;
+  position: sticky;
+  top: 50px;
+  text-align: center;
+}
+
+.fixed {
+  background-color: #0000ff;
+  position: fixed;
+  width: 100%;
+  height: 3rem;
+  /* Acest z-index scoate elementul în fața celorlalte elemente */
+  z-index: 1;
+}
+
+/* static - Aceasta este setarea implicită. Elementul este poziționat conform fluxului normal al documentului.
+relative  - Elementul este poziționat în raport cu poziția sa normală în fluxul documentului
+fixed     - Elementul este poziționat în raport cu viewport-ul
+absolute  - Elementul este poziționat în raport cu cel mai apropiat strămoș poziționat
+sticky    - Elementul comută între o poziție relativă și una fixă, în funcție de poziția de derulare
+
+Elementele sunt apoi poziționate în locația lor finală cu proprietățile , , și . top bottom left right */
+
+.position {
+  /* Valoare implicita/default */
+  position: static;
+}
+
+.absolute {
+  background-color: #00ff00;
+  position: absolute;
+  top: 1.5rem;
+  left: 5rem;
+  border-radius: 10px;
+}
+
+.notificare {
+  background-color: #ffb413;
+  position: fixed;
+  top: 2.9rem;
+  left: 7rem;
+  border-radius: 30%;
+}
+
+h1 {
+  float: right;
+  /* float inseamna ca elementul este mutat la dreapta adica zboara*/
+}
+
+/* Proprietatea clearspecifică modul în care ar trebui să se comporte elementele atunci când se intersectează pe pagină. Poate lua una dintre următoarele valori:
+
+left—partea stângă a elementului nu va atinge niciun alt element din cadrul aceluiași element care îl conține.
+right—partea dreaptă a elementului nu va atinge niciun alt element din cadrul aceluiași element care îl conține.
+both—nicio parte a elementului nu va atinge niciun alt element din cadrul aceluiași element care îl conține.
+none—elementul poate atinge oricare parte. */
+
+.relative {
+  background-color: #ff0000;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+strong {
+  display: block;
+}
+
+ul {
+  text-align: center;
+  background-color: #00ff00;
+}
+
+li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+footer {
+  background-color: #0000ff;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  color: crimson;
+  background-color: gray;
+}
+
+/* Culori hexazecimale */
+/* darkseagreen: #8FBC8F
+sienna:       #A0522D
+saddlebrown:  #8B4513
+brown:        #A52A2A
+black:        #000000 or #000
+white:        #FFFFFF or #FFF
+aqua:         #00FFFF or #0FF
+darkseagreen: #8FBC8F  */
+/* Caracterele reprezintă valori pentru roșu, albastru și verde.*/
+
+.purple {
+  background-color: #800080;
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.black {
+  background-color: #000000;
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.dark-red {
+  background-color: #8b0000;
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+}
+
+.red {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(255, 0, 0);
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.green {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(0, 128, 0);
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.blue {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(0, 0, 225);
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.color-1 {
+  width: 15rem;
+  height: 15rem;
+  background-color: hsl(20, 65%, 50%);
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.color-2 {
+  width: 10rem;
+  height: 10rem;
+  background-color: hsl(50, 70%, 40%);
+}
+
+.color-3 {
+  width: 7rem;
+  height: 7rem;
+  background-color: hsl(70, 75%, 30%);
+}
+
+.opacity-1 {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(150, 50, 100, 0.3);
+  margin-left: 1rem;
+  position: relative;
+}
+
+.opacity-2 {
+  width: 5rem;
+  height: 5rem;
+  background-color: hsla(90, 30%, 50%, 0.9);
+  position: absolute;
+  bottom: 5rem;
+  left: 8rem;
+}
+
+.opacity-3 {
+  width: 5rem;
+  height: 5rem;
+  background-color: hsla(5, 70%, 55%, 0.6);
+  position: absolute;
+  bottom: 0.1rem;
+  left: 2rem;
+}
+
+/* RGB alorile RGB variază de la 0 la 255 și arată astfel: rgb(7, 210, 50). */
+
+/* HSL reprezintă nuanța (culoarea în sine), saturația (intensitatea culorii) și 
+luminozitatea (cât de deschisă sau închisă este o culoare),
+variază de la 0 la 360, iar saturația și luminozitatea sunt reprezentate ambele 
+ca procente, astfel: hsl(200, 20%, 50%).  */

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <h1>Practice</h1>
+    <h2>Programming</h2>
+    <h3>Html</h3>
+    <h4>Css</h4>
+    <h5>JavaScript</h5>
+    <h6>Python</h6>
+    <p>This is a paragraph.</p>
+    <p>
+      Lorem ipsum, <em>dolor</em> sit amet consectetur adipisicing elit. Soluta
+      sapiente unde nam dolorum! Quasi suscipit sequi,
+      <strong>eligendi</strong> fuga et molestiae.
+    </p>
+
+    <div>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+    <img
+      src="./assets/Mountain-Landscape-16x12in-40x30cm.jpg"
+      width="320"
+      height="240"
+      alt="Mountain Landscape"
+    />
+    <video
+      src="./assets/No Distractions Coding Music _ Deep Hacker Atmosphere.mp4"
+      width="320"
+      height="240"
+      controls
+    ></video>
+    <br />
+    <a href="https://www.codecademy.com/learn/learn-html-tables"
+      >Codecademy HTML Tables</a
+    >
+    <br />
+    <a href="https://www.codecademy.com/learn/learn-html-tables" target="_blank"
+      >Codecademy HTML Tables. diferit!!</a
+    >
+    <br />
+    <a href="./index.html">Home</a>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th scope="col">Numele</th>
+          <th scope="col">Disciplina</th>
+          <th scope="col">Nota</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Popescu</td>
+          <td colspan="2">Matematica</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Ionescu</td>
+          <td>Informatica</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td rowspan="2">2</td>
+          <td>19</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <form action="" method="post">
+      <label for="text">Scrie ceva</label>
+      <input type="text" name="text" id="text" value="introdu ceva" />
+      <br />
+      <label for="numar">Alege un numar</label>
+      <input type="number" id="numar" name="numar" step="5" />
+      <br />
+      <label for="email">Introdu email</label>
+      <input type="email" name="email" id="email" required />
+      <br />
+      <label for="password">Introdu password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        min-length="6"
+        max-length="20"
+        required
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d@$!%*?&]{6,20}$"
+      />
+      <br />
+      <label for="range">Culiseaza</label>
+      <input type="range" id="range" name="range" min="0" max="10" step="1" />
+      <br />
+      <label for="radio">Bifeaza daca esti de acord</label>
+      <input type="radio" id="radio" name="radio" />
+      <br />
+      <label for="checkbox">Bifeaza daca iti place</label>
+      <input type="checkbox" name="checkbox" id="checkbox" />
+      <br />
+      <label for="list">Alege din lista</label>
+      <input list="lista" name="lista" id="list" />
+      <datalist id="lista">
+        <option value="Computer"></option>
+        <option value="Laptop"></option>
+        <option value="PlayStation"></option>
+      </datalist>
+      <br />
+      <br />
+      <label for="chenar">Adauga o descriere</label>
+      <textarea name="caseta text" id="chenar" rows="5" cols="50">
+Scrie o descriere</textarea
+      >
+      <input type="submit" name="buton" value="Send" />
+    </form>
+
+    <header>
+      <h1>My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+   <main>
+    <section>
+      <article>
+        <h2>Article Title</h2>
+        <p>This is the content of the article.</p>
+      </article>
+      <aside>
+        <h3>Related Links</h3>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </aside>
+    </section>
+    <figure>
+      <img src="./assets/Mountain-Landscape-16x12in-40x30cm.jpg" alt="Mountain Landscape" width="320" height="240" />
+      <figcaption>Mountain Landscape</figcaption>
+    </figure>
+    <audio controls>
+      <source src="./assets/Dina Vass - The Love I Have For You (ReMan Afro House Remix).mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <video controls>
+      <source src="./assets/No Distractions Coding Music _ Deep Hacker Atmosphere.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <embed src="./assets/coding.gif" width="320" height="240" />
+   </main>
+
+   footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+
+  </body>
+</html>

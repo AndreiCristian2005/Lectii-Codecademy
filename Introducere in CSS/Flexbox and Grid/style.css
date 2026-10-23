@@ -1,0 +1,506 @@
+body {
+  margin: 0;
+  border: 0;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.box {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.display-inline-flex {
+  display: inline-flex;
+}
+
+#flex-start {
+  justify-content: flex-start;
+}
+
+#flex-end {
+  justify-content: flex-end;
+}
+
+#center {
+  justify-content: center;
+}
+
+#space-between {
+  justify-content: space-between;
+}
+
+#space-around {
+  justify-content: space-around;
+}
+
+.align-items {
+  background-color: lightgray;
+  display: flex;
+  height: 150px;
+  justify-content: space-around;
+  max-width: 600px;
+}
+
+.box1,
+.box2,
+.box3 {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.box-baseline {
+  background-color: aqua;
+  width: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.box-stretch {
+  background-color: aqua;
+  width: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+  font-family:
+    courier New,
+    monospace;
+  font-weight: 700;
+}
+
+#flexstart {
+  align-items: flex-start;
+}
+
+#flexend {
+  align-items: flex-end;
+}
+
+#centers {
+  align-items: center;
+}
+
+#baseline {
+  align-items: baseline;
+}
+
+#stretch {
+  align-items: stretch;
+}
+
+.flex-grow {
+  background-color: royalblue;
+  width: 100px;
+  height: 100px;
+}
+
+#top-flex-grow,
+#middle-flex-grow,
+#bottom-flex-grow {
+  display: flex;
+  background-color: royalblue;
+  height: 150px;
+}
+
+.top,
+.middle,
+.bottom {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+  margin: 10px 30px;
+}
+
+.top.side {
+  background-color: red;
+  flex-grow: 1;
+}
+
+.middle.center {
+  background-color: green;
+  flex-grow: 2;
+}
+
+.bottom.side {
+  background-color: yellow;
+  flex-grow: 1;
+}
+
+.bottom.center {
+  background-color: purple;
+  flex-grow: 2;
+}
+
+#top-flex-shrink,
+#middle-flex-shrink,
+#bottom-flex-shrink {
+  display: flex;
+  background-color: lightpink;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.one,
+.two,
+.three {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.one.side {
+  background-color: red;
+  flex-shrink: 2;
+}
+
+.two.center {
+  background-color: green;
+  flex-shrink: 0;
+}
+
+.three.side {
+  background-color: yellow;
+  flex-shrink: 3;
+}
+
+#top-flex-basis,
+#middle-flex-basis,
+#bottom-flex-basis {
+  display: flex;
+  background-color: lightgreen;
+  height: 150px;
+  margin: 10px;
+}
+
+.first,
+.second,
+.last {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.first.side {
+  background-color: red;
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+.first.center {
+  flex-grow: 2;
+}
+
+.second.side {
+  background-color: green;
+  flex-basis: 100px;
+  flex-grow: 1;
+}
+
+.second.center {
+  flex-grow: 2;
+  flex-basis: 150px;
+  flex-shrink: 1;
+}
+
+.last.side {
+  background-color: yellow;
+  flex-basis: 200px;
+  flex-shrink: 3;
+}
+
+.last.center {
+  flex-shrink: 2;
+  flex-basis: 150px;
+}
+
+#flex-top,
+#flex-bottom {
+  display: flex;
+  background-color: lightsalmon;
+  height: 150px;
+  margin: 10px;
+  align-items: center;
+}
+
+.primary,
+.secondary {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.primary.side {
+  flex: 2 1 150px;
+  /* Folosim flexproprietatea pentru a declara valorile pentru
+   flex-grow, flex-shrink și flex-basis(în această ordine) toate pe o singură linie. */
+}
+
+.primary.center {
+  flex: 2 2;
+  /* Folosim flexproprietatea pentru
+ a declara flex-grow și flex-shrink, dar nu flex-basis. */
+}
+
+.secondary.side,
+.secondary.center {
+  flex: 1 100px;
+  /* Folosim flexproprietatea pentru a declara flex-growși flex-basis.
+   Rețineți că nu există nicio modalitate de a seta doar flex-shrinkși flex-basisfolosind 2 valori. */
+}
+
+#flex-wrap,
+#flex-nowrap,
+#flex-wrap-reverse {
+  display: flex;
+  background-color: darkkhaki;
+  margin: 10px;
+}
+
+.boxes {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  /* wrap— elementele copil ale unui container flex care nu se încadrează într-un rând
+   se vor muta în jos, pe linia următoare */
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+  /* Default */
+  /* nowrap— previne încadrarea elementelor; aceasta este valoarea implicită
+   și este necesară doar pentru a suprascrie o valoare de încadrare setată de o altă regulă CSS. */
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+  /* wrap-reverse— aceeași funcționalitate ca wrap, dar ordinea rândurilor dintr-un container flex
+  este inversată (de exemplu, într-un flexbox cu 2 rânduri, primul rând dintr-un wrapcontainer va
+   deveni al doilea rând de intrare wrap-reverse, iar al doilea rând din wrapcontainer va deveni 
+   primul rând de intrare wrap-reverse) */
+}
+
+.align-content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightcoral;
+  margin: auto;
+  height: 300px;
+  width: 600px;
+}
+
+.content {
+  width: 200px;
+  min-height: 75px;
+  /* acest min-height lam adaugat pentru ca elementele sa nu se suprapuna */
+  background-color: aqua;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+}
+
+#start {
+  align-content: flex-start;
+}
+
+#end {
+  align-content: flex-end;
+}
+
+#cen_ter {
+  align-content: center;
+}
+
+#spacebetween {
+  align-content: space-between;
+}
+
+#spacearound {
+  align-content: space-around;
+}
+
+#stre_tch {
+  align-content: stretch;
+}
+
+.container-flex-direction {
+  display: flex;
+  background-color: lightblue;
+  margin: 10px;
+  height: auto;
+  align-items: center;
+}
+
+.element {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  align-content: center;
+}
+
+#row {
+  flex-direction: row;
+}
+
+#row-reverse {
+  flex-direction: row-reverse;
+}
+
+#column {
+  flex-direction: column;
+}
+
+#column-reverse {
+  flex-direction: column-reverse;
+}
+
+.container-flex-flow {
+  display: flex;
+  background-color: lightblue;
+  margin: 10px;
+  height: auto;
+  align-items: center;
+}
+
+#flex-flow-column-wrap {
+  flex-flow: column wrap;
+}
+
+#flex-flow-row-reverse-wrap {
+  flex-flow: row-reverse wrap;
+}
+
+.main {
+  display: flex;
+  background-color: lightblue;
+  margin: 10px;
+  height: auto;
+  min-width: 20vh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.containers {
+  display: flex;
+  background-color: lightgreen;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 400px;
+  height: 450px;
+  align-items: center;
+  border-radius: 10px;
+  margin: 1rem;
+  box-shadow: 1rem gray;
+}
+
+.small {
+  background-color: green;
+  border: 1px solid black;
+  width: 300px;
+  height: 200px;
+  align-items: center;
+  display: flex;
+  margin: 10px;
+}
+
+.small img {
+  margin: 5px;
+  border: 2px solid black;
+  min-width: 100px;
+  max-width: 200px;
+  min-width: 100px;
+  max-height: 200px;
+}
+
+.large {
+  display: flex;
+  margin: 1rem;
+}
+
+.large img {
+  width: 20rem;
+  height: 20rem;
+  border: 2px solid black;
+}
+
+.banner-paragraph {
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+
+.banner2-paragraph {
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+  background-color: lightgrey;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 
+display: flex schimbă un element într-un container la nivel de bloc cu elemente flex în interiorul său.
+
+display: inline-flex permite apariția mai multor containere flexibile în linie unele cu altele.
+
+justify-content este folosit pentru a spația elementele de-a lungul axei principale.
+
+align-items este utilizat pentru a spația elementele de-a lungul axei transversale.
+
+flex-grow este utilizat pentru a specifica cât spațiu (și în ce proporții) absorb elementele flexibile de-a lungul axei principale.
+
+flex-shrink este utilizat pentru a specifica cât de mult se contractă elementele flexibile și în ce proporții de-a lungul axei principale.
+
+flex-basis este utilizat pentru a specifica dimensiunea inițială a unui element stilizat cu flex-grow și/sau flex-shrink.
+ 
+flex este utilizat pentru a specifica flex-grow, flex-shrink, și flex-basis într-o singură declarație.
+
+flex-wrap specifică faptul că elementele ar trebui să se deplaseze de-a lungul axei transversale dacă containerul flexibil nu este suficient de mare.
+
+align-content este utilizat pentru a spația rândurile de-a lungul axei transversale.
+
+flex-direction este utilizat pentru a specifica axa principală și axa transversală.
+
+flex-floweste folosit pentru a specifica flex-wrapși flex-directionîntr-o singură declarație.
+
+Containerele flex pot fi imbricate unele în altele prin declararea display: flexunui sau display: inline-flexpentru copiii containerelor flex.
+*/

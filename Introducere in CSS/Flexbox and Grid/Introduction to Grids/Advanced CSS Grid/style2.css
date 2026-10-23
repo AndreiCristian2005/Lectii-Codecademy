@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(163, 163, 163);
+}
+
+.justify-items {
+  margin: auto;
+}
+
+header,
+footer {
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: repeat(3, 300px) / repeat(2, 100px);
+  gap: 10rem 5rem;
+  margin-top: 30px;
+  margin-left: 10rem;
+  justify-items: center;
+  justify-content: center;
+  /* justify-content: center; Aceasta declaratie face ca continutul
+   din grila (parinte) sa se alinieze pe centru. */
+  align-items: center;
+  /* align-items: center; Aceasta declaratie alinieaza pe centru de
+     sus in jos pe axa coloanei */
+  align-content: center;
+  /* align-content: center; Aceasta declaratie align-content 
+     poziționează rândurile de-a lungul axei coloanei sau de sus în jos */
+  grid-auto-rows: 500px;
+  grid-auto-columns: 500px;
+  /* grid-auto-rows si grid-auto-columns Aceste declaratii sunt două 
+     proprietăți pentru a specifica dimensiunea pistelor de grilă adăugate implicit*/
+
+  /* grid-auto-rowsspecifică înălțimea rândurilor de grilă adăugate implicit. 
+     grid-auto-columnsspecifică lățimea coloanelor de grilă adăugate implicit. */
+
+  grid-auto-flow: row dense;
+  /* grid-auto-flows pecifică dacă elemente noi ar trebui adăugate în rânduri
+       sau coloane și este declarată pe containerele de tip grid. */
+
+  /* row— specifică faptul că noile elemente ar trebui să umple rândurile de la
+   stânga la dreapta și să creeze rânduri noi atunci când există prea multe elemente (implicit)
+  
+   column— specifică faptul că noile elemente ar trebui să umple coloanele de sus
+    în jos și să creeze coloane noi atunci când există prea multe elemente
+
+  dense— acest cuvânt cheie invocă un algoritm care încearcă să umple golurile 
+  anterioare în aspectul grilei dacă se adaugă elemente mai mici */
+
+/* De asemenea se poate row sau column cu dense, astfel: grid-auto-flow: row dense; */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.section {
+  width: 200px;
+}
+
+.mins {
+  display: inline-block;
+  letter-spacing: 0.1rem;
+  color: #4a4a4a;
+  position: relative;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.description {
+  border-top: 1px solid gray;
+  font-family: monospace;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.one {
+  align-self: end;
+}
+/* align-self: end; Aceasta declaratie specifică modul în care un 
+element individual ar trebui să se poziționeze în raport cu axa coloanei.
+
+justify-self: end; Aceste declaratie specifică modul în care un
+ element individual ar trebui să se poziționeze în raport cu axa rândului. */
+.four {
+  justify-self: end;
+}
+
+footer {
+  background-color: cornflowerblue;
+  text-align: center;
+  height: 4rem;
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 8rem;
+}
+
+/* 
+Putem folosi justify-content pentru a poziționa întreaga grilă de-a 
+lungul axei rândului. 
+
+
+Acceptă aceste valori:
+
+start — aliniază grila cu partea stângă a containerului grilei
+
+end — aliniază grila cu partea dreaptă a containerului grilei
+
+center — centrează grila pe orizontală în containerul grilei
+
+stretch — întinde elementele grilei pentru a mări dimensiunea 
+grilei astfel încât aceasta să se extindă pe orizontală pe întregul container
+
+space-around — include o cantitate egală de spațiu pe fiecare parte a unui element
+ de grilă, rezultând o cantitate dublă de spațiu între elemente față de cea existentă
+  înainte de primul și după ultimul element
+
+space-between — include o cantitate egală de spațiu între elementele grilei și niciun
+ spațiu la niciunul dintre capete
+
+space-evenly — plasează o cantitate uniformă de spațiu între elementele grilei și la 
+fiecare capăt
+ */

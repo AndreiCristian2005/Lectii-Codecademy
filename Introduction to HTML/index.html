@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina pentru invatare</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Andrei</h1>
+    <p>
+      "Life is very short and what we have to do must be done in the now."-
+      Audre Lorde
+    </p>
+
+    <!-- Div Element -->
+
+    <div>
+      <p>
+        This paragraph is a child of the div element and a grandchild of the
+        body element
+      </p>
+    </div>
+
+    <h1>The Brown Bear</h1>
+    <div>
+      <h2>About Brown Bears</h2>
+      <h3>Species</h3>
+      <h3>Features</h3>
+    </div>
+    <div>
+      <h2>Habitat</h2>
+      <h3>Countries with Large Brown Bear Populations</h3>
+      <h3>Countries with Small Brown Bear Populations</h3>
+    </div>
+    <div>
+      <h2>Media</h2>
+    </div>
+
+    <!-- Attributes -->
+
+    <!-- <h1>The Brown Bear</h1>
+    <div id="introduction">
+      <h2>About Brown Bears</h2>
+      <h3>Species</h3>
+      <h3>Features</h3>
+    </div>
+    <div id="habitat">
+      <h2>Habitat</h2>
+      <h3>Countries with Large Brown Bear Populations</h3>
+      <h3>Countries with Small Brown Bear Populations</h3>
+    </div>
+    <div id="media">
+      <h2>Media</h2>
+    </div> -->
+
+    <!-- Displaying Text -->
+    <h1>The Brown Bear</h1>
+    <div id="introduction">
+      <h2>About Brown Bears</h2>
+      <p>
+        The brown bear (Ursus arctos) is native to parts of northern Eurasia and
+        North America. Its conservation status is currently Least Concern. There
+        are many subspecies within the brown bear species, including the Atlas
+        bear and the Himalayan brown bear.
+      </p>
+      <h3>Species</h3>
+      <h3>Features</h3>
+      <p>
+        Brown bears are not always completely brown. Some can be reddish or
+        yellowish. They have very large, curved claws and huge paws. Male brown
+        bears are often 30% larger than female brown bears. They can range from
+        5 feet to 9 feet from head to toe.
+      </p>
+    </div>
+    <div id="habitat">
+      <h2>Habitat</h2>
+      <h3>Countries with Large Brown Bear Populations</h3>
+      <h3>Countries with Small Brown Bear Populations</h3>
+      <p>
+        Some countries with smaller brown bear populations include Armenia,
+        Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal,
+        Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.
+      </p>
+    </div>
+    <div id="media">
+      <h2>Media</h2>
+    </div>
+
+    <!-- Text Styling -->
+    <p>
+      The brown bear <em>(Ursus arctos)</em> is native to parts of northern
+      Eurasia and North America. Its conservation status is currently
+      <strong>Least Concern</strong>. There are many subspecies within the brown
+      bear species, including the Atlas bear and the Himalayan brown bear.
+    </p>
+
+    <!-- Line Break -->
+    <p>
+      The brown bear (<em>Ursus arctos</em>) is native to parts of northern
+      Eurasia and North America. Its conservation status is currently
+      <strong>Least Concern</strong>.<br /><br />
+      There are many subspecies within the brown bear species, including the
+      Atlas bear and the Himalayan brown bear.
+    </p>
+
+    <!-- Unordered List -->
+    <ul>
+      <li><a href="#media-video">Madia</a></li>
+      <li>Collarus</li>
+      <li>Horribilis</li>
+      <li>Nelsoni (extinct)</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <ol>
+      <li>Russia</li>
+      <li>United States</li>
+      <li>Canada</li>
+    </ol>
+
+    <!-- Images -->
+    <!-- Image Alt Attribute -->
+    <img
+      src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg"
+      alt="Ursus arctos"
+    />
+
+    <!-- Videos -->
+    <video
+      id="media-video"
+      src="https://content.codecademy.com/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4"
+      width="320"
+      height="240"
+      controls
+    >
+      Video not supported
+    </video>
+
+    <!-- Links + attributes -->
+    <a href="https://www.codecademy.com" target="_blank">Codecademy</a>
+    <a href="./aboutme.html">About Me</a>
+
+    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">
+      <img
+        src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg"
+    /></a>
+
+    <ul>
+      <li><a href="#media-video">Media</a></li>
+    </ul>
+
+    <!-- White Space -->
+    <h1>Whitespace</h1>
+    <!-- Sunt una sub alta -->
+    <p>Whitespace and indentation make html documents easier to read</p>
+
+    <!-- Indentation -->
+    <h1>Whitespace</h1>
+    <div>
+      <p>Whitespace and indentation make html documents easier to read.</p>
+    </div>
+
+    <!-- Comments -->
+    <!-- Favorite Quotes = ctrl + / -->
+    <p>Feet, what do I need you for when I have wings to fly?</p>
+
+    <!-- Tabels  -->
+    <table>
+      <!-- border="1" => Acesta este un atribut din vechiul HTML si ii face bordura tabelului-->
+      <tr>
+        <!-- Acesta este un rand -->
+        <td>
+          <!-- Acesta este o celula -->
+        </td>
+      </tr>
+      <thead>
+        <!-- Acesta este capul tabelului -->
+        <tr>
+          <!-- Titluri in tabel -->
+          <th scope="col">Company Name</th>
+          <!-- Trebuie denumite col daca sunt coloane, coloanele sunt de sus in jos-->
+          <th scope="col">Number of Items to Ship</th>
+          <th scope="col">Next Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Acest tag este corpul tabelului -->
+        <tr>
+          <!--  Data in tabel -->
+          <td>Data 1</td>
+          <td>Data 2</td>
+          <td>Data 3</td>
+        </tr>
+        <tr>
+          <td colspan="2">Davie's Burgers</td>
+          <!-- Acest nume apare sub cele doua nume de dedeasuopra, adica sub Company Name si Number of Items to Ship -->
+          <td>2</td>
+          <td>Send Invoice</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Baker's Bike Shop</td>
+          <!-- Acest nume apare pe doua randuri, adica sub Company Name si Number of Items to Ship -->
+          <td>3</td>
+          <td>Send Invoice</td>
+        </tr>
+        <tr>
+          <td>Miss Sally's Southern</td>
+          <td>4</td>
+          <td>Ship</td>
+        </tr>
+        <tr>
+          <td>Summit Resort Rentals</td>
+          <td>4</td>
+          <td>Ship</td>
+        </tr>
+        <tr>
+          <td>Strike Fitness</td>
+          <td>1</td>
+          <td>Enter Order</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- Acest tag este subsolul tabelului -->
+        <td>Total</td>
+        <td>28</td>
+      </tfoot>
+    </table>
+
+    <!-- Forms -->
+    <form action="/Introduction to HTML/" method="post">
+      <!-- Atributul actiondetermină unde sunt trimise informațiile. Atributului
+      methodi se atribuie un verb HTTP care este inclus în cererea HTTP. -->
+      <h1>Formular</h1>
+      <p>Acesta este un formular</p>
+      <label for="username"> Username</label>
+      <br />
+      <input
+        type="text"
+        name="username"
+        id="username"
+        value="Introduceti numele"
+      />
+      <br />
+      <label for="user-password">Password</label>
+      <br />
+      <input type="password" id="user-password" name="password" />
+      <br />
+      <label for="amount">How many patties would you like?</label>
+      <br />
+      <input id="amount" type="number" step="1" name="amount" />
+
+      <label for="doneness">How do you want your patty cooked</label>
+      <br />
+      <span>Rare</span>
+      <input
+        id="doneness"
+        name="doneness"
+        type="range"
+        min="0"
+        max="5"
+        step="0.5"
+      />
+      <br />
+      <input id="lettuce" name="topping" type="checkbox" value="lettuce" />
+      <label for="lettuce">Lettuce</label>
+      <input id="tomato" type="checkbox" name="topping" value="tomato" />
+      <label for="tomato">Tomato</label>
+      <input id="leguma" type="checkbox" name="topping" value="leguma" />
+      <label for="leguma">Castraveti</label>
+      <br />
+      <span>Well-Done</span>
+
+      <input id="yes" type="radio" name="cheese" value="yes" />
+      <label for="yes">Yes</label>
+
+      <input id="no" type="radio" name="cheese" value="no" />
+      <label for="no">No</label>
+      <br />
+      <label for="bun">What type of bun would you like?</label>
+      <select id="bun" name="bun">
+        <option value="sesame">Sesame</option>
+        <option value="potato">Potato</option>
+        <option value="kiwi">Kiwi</option>
+      </select>
+      <br />
+      <label for="sauce">What type of sauce would you like?</label>
+      <input type="text" list="sauces" id="sauce" name="sauce" />
+      <!-- Datalist -->
+      <datalist id="sauces">
+        <option value="ketchup"></option>
+        <option value="mayo"></option>
+        <option value="mustar"></option>
+      </datalist>
+      <br />
+      <label for="extra">Anything else you want to add?</label>
+      <br />
+      <textarea id="extra" name="extra" rows="3" cols="40">Adaugati un text</textarea
+      >
+      <input type="submit" value="Send" />
+    </form>
+
+    <!-- Form Validation -->
+
+     <form action="check.html" method="GET">
+        <!--Add a required attribute to the input element-->
+        <label for="guess">Enter a number between 1-10:</label>
+        <br>
+        <input type="number" name="guess" id="guess" >
+        <br>
+        <!--Add the min and max attribute to the input-->
+        <input type="number" name="guess" id="guess" min="1" max="10" required>
+        <br />
+        <input type="submit" value="Submit">
+        <!--Add the minlength and maxlength attributes to the input fields-->
+        <label for="username">Username:</label>
+        <br>
+        <input id="username" name="username" type="text" minlength="3" maxlength="15" required>
+        <br>
+        <label for="pw">Password:</label>
+        <br>
+        <!-- Am adaugat un pattern pentru a limita caracterele permise -->
+        <input id="pw" name="pw" type="password" minlength="8" maxlength="15" required pattern="[A-Za-z0-9]+">
+        <br>
+        <input type="submit" id="submission" value="Submit">
+        <input type="submit" value="Submit">
+      </form>
+     
+      <!-- HTML Semantic -->
+       <a href="HTMLsemantic.html">HTML Semantic</a>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+}
+
+a {
+  display: block;
+  text-align: center;
+  width: 300px;
+  padding: 20px 5px;
+  margin: 10% auto;
+  background-color: #111;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 1s;
+  /* Pentru a crea o tranzitie simpla  trebuie să specificăm
+     două dintre cele patru aspecte:
+
+     1. Proprietatea pe care dorim să o transferăm.
+     2. Durata tranziției. */
+
+  transition-timing-function: ease-in; /* => descrie ritmul tranziției. */
+}
+
+.transitions:hover {
+  background-color: gray;
+}
+
+/* !!! Valoarea implicita este 0s */
+
+/* Pentru transition-timing-function mai sunt valori calide care includ:
+
+ease-in — pornește încet, accelerează rapid, se oprește brusc
+ease-out — începe brusc, încetinește și se termină lent
+ease-in-out — începe lent, devine rapid la mijloc și se termină lent
+linear — viteză constantă pe tot parcursul
+*/
+
+.delay {
+  max-width: 300px;
+  transition-property: max-width, border-radius;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  border-radius: 50%;
+  transition-delay: 250ms;
+}
+
+/* Delay specifică timpul de așteptare înainte de începerea tranziției. */
+
+.delay:hover {
+  max-width: 200px;
+border-radius: 20px;
+}

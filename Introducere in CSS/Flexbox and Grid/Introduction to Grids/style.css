@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.grid {
+  border: 2px solid red;
+  width: 300px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 100px 20% 200px;
+  grid-template-rows: 30% 50% 10%;
+  margin: 10px;
+}
+
+.box {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: lightblue;
+  text-align: center;
+}
+
+.grid-template {
+  display: grid;
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+  border: 2px solid blueviolet;
+  grid-template: 30% 30% 40% / 60px 90px 130px;
+  /* Cele din partea stanga modifica de sus in jos
+   si cele din partea dreapta modifica de la stanga la dreapta */
+}
+
+.fraction {
+  display: grid;
+  width: 400px;
+  height: 300px;
+  border: 2px solid orange;
+  grid-template: 3fr 7fr 3fr / 16fr 10fr 10fr;
+  /* Utilizarea fr facilitează prevenirea grilă
+elementele să depășească limitele grilei.  */
+}
+
+.repeat {
+  display: grid;
+  height: 500px;
+  border: 3px solid pink;
+  grid-template: repeat(3, 1fr) / 30% minmax(100px, 300px) 30%;
+  /* Am eliminat width */
+
+  /* Funcția repeat va duplica specificațiile 
+pentru rânduri sau coloane de un anumit număr de ori.  */
+  /* repeat() este o funcție care scurtează scrierea unei liste 
+repetitive de valori în grid-template-columns / grid-template-rows
+ (sau în forma scurtă grid-template). Sintaxa e:
+            repeat(numărDeRepetări, valoare1 valoare2 ...) */
+
+  /* Funcția CSS minmax(min, max)este utilizată cu grile CSS și definește
+ un interval de dimensiuni mai mare sau egal cu o valoare minimă 
+ și mai mic sau egal cu o valoare maximă. */
+
+  /* Gap adauga spatiu intre coloane si randuri, gap: (row)10px (column)5px sau (pentru ambele)gap: 10px; */
+  /* row-gap: 10px;
+ column-gap: 10px; */
+  gap: 10px 10px;
+}
+
+.grid-items {
+  display: grid;
+  border: 2px solid royalblue;
+  width: 500px;
+  height: 500px;
+  grid-template: repeat(4, 4fr 4fr) / repeat(4, 4fr 4fr);
+}
+
+/* grid-row-start și grid-row-end controlează pe câte rânduri
+ se întinde un element din grid, prin referire la liniile grid-ului
+  (grid lines), nu la rândurile în sine. */
+.a {
+  /* grid-row-start: 5;
+  grid-row-end: 8; */
+  grid-row: 5 / 8;
+}
+
+/* grid-row: (grid-row-start) 3 / 5 (grid-row-end); aceasta este prescurtarea
+  la grid-row-start si grid-row-end. */
+
+.b {
+  /* grid-row-start: 2;
+  grid-row-end: 4; */
+  grid-row: 2 / 4;
+}
+
+.c {
+  /* grid-column-start: 3;
+  grid-column-end: 7; */
+  grid-column: 3 / span 7;
+  /* Putem folosi cuvântul cheie spanpentru a începe sau
+   a termina o coloană sau un rând;
+   SPAN INTINDE ITEMUL CU 7 COLOANE, DE LA A 3 COLOANA + 7 */
+}
+
+
+.grid-area {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  border: 2px solid aquamarine;
+  grid-template: repeat(5, 5fr 5fr) / repeat(5, 5fr 5fr);
+}
+
+.one {
+  grid-area: 6 / 7 / 8 / 9;
+}
+
+.two {
+  grid-area: 9 / 3 / 11 / span 6;
+}
+
+.three {
+  grid-area: 2 / 2 / span 3 / span 6;
+}
+/* grid-areaia patru valori separate prin 
+bare oblice. Ordinea este importantă! 
+Așa se grid-areavor interpreta acele valori. 
+
+grid-area: (grid-row-start) 3 / (grid-column-start) 4 / (grid-row-end) 7 / (grid-column-end) 6;
+*/
+
+
+/*
+ grid-template-columns = definește numărul și dimensiunile coloanelor grilei
+
+ grid-template-rows = definește numărul și dimensiunile rândurilor grilei
+
+ grid-template = este o prescurtare pentru definirea ambelor grid-template-columns și grid-template-rows pe o singură linie
+
+ row-gap = pune spațiu gol între rândurile grilei
+
+column-gap = pune spațiu gol între coloanele grilei
+
+gap = este o prescurtare pentru definirea ambelor row-gapși column-gappe o singură linie
+
+grid-row-start şi grid-row-end = face ca elementele să se întindă pe anumite rânduri ale grilei
+
+grid-column-start si grid-column-end = face ca elementele să se întindă pe anumite coloane ale grilei
+
+grid-area = este o prescurtare pentru grid-row-start, grid-column-start, grid-row-end, și grid-column-end, toate pe o singură linie
+ */
