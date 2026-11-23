@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #111;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+  font-size: 2em;
+  /*  em reprezintă dimensiunea fontului a elementului curent 
+    sau dimensiunea implicită a fontului de bază setată de browser,
+     dacă nu este dată niciuna. */
+}
+
+.rem {
+  font-size: 2rem;
+  /* Rem reprezintă elementul rădăcină „em” . 
+    Acționează similar cu „em”, dar în loc să verifice dimensiunea
+     fontului din elementele părinte, verifică elementul rădăcină . 
+     Elementul rădăcină este <html> eticheta. */
+  color: chartreuse;
+}
+
+.procentaj {
+  color: coral;
+  padding-top: 2rem;
+}
+
+.images {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-self: center;
+  gap: 1em;
+}
+/* Se ia 50% din dimensiunile setate in parintele acestor imagini! */
+/* Pentru dimensionarea elementelor HTML NON-TEXT se foloseste % (procent)*/
+
+/* Procentajele sunt adesea folosite pentru a dimensiona valorile modelului 
+box, cum ar fi lăţime și înălțime, umplutură, frontieră și margini.
+De asemenea, pot fi folosite pentru a seta proprietățile de poziționare 
+(sus, jos, stânga, dreapta) */
+
+.images img {
+  width: 60%;
+  height: 50%;
+}
+
+.margin-padding {
+  color: red;
+  font-size: 2rem;
+}
+
+.images2 {
+  height: 30rem;
+}
+
+.images2 img {
+  height: 50%;
+  margin-top: 10%;
+}
+
+p {
+  min-width: 20rem;
+  /* puteți limita minimul și maximul
+latime a unui element. */
+  min-height: 9rem;
+  /* puteți limita minimul și maximul
+înălţime a unui element. */
+  color: crimson;
+}
+
+.scaling {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 2rem;
+}
+
+.scaling img {
+  max-width: 100%;
+  height: auto;
+}
+
+.background-scaling {
+  height: 46rem;
+  width: 50%;
+  background-image: url(./assets/videoframe.gif.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* MEDIA QUERIES */
+/* Folosim interogări media pentru a adapta conținutul unui
+ site web la diferite dimensiuni ale ecranului. */
+
+/* Pentru a viza în funcție de rezoluție, putem folosi funcțiile
+  media min-resolutionși max-resolution. Aceste funcții media acceptă
+   o valoare a rezoluției fie în puncte per inch (dpi), fie în puncte 
+   per centimetru (dpc). */
+/* Operatorul andpoate fi utilizat pentru a solicita mai multe caracteristici media. */
+/* Această nouă funcție media ar trebui să verifice dacă ecranul orientationeste portrait. */
+@media only screen and (min-width: 320px) and (max-width: 480px),
+  (orientation: portrait) {
+  h1 h2 {
+    width: 250px;
+  }
+
+  .images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .scaling {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  h2 {
+    float: left;
+    width: 5rem;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

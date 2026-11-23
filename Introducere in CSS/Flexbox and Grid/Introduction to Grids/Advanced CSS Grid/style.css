@@ -26,9 +26,9 @@ containere de tip grid. */
 }
 
 h2 {
-    font-family: monospace;
-    margin-top: 10px;
-    text-align: center;
+  font-family: monospace;
+  margin-top: 10px;
+  text-align: center;
 }
 
 header {
@@ -59,46 +59,42 @@ footer {
   grid-area: footer;
 }
 
-
-
 .container2 {
-                 /* Overlap elements */
-    display: grid;
-    position: relative;
-    max-width: 100%;
-    grid-template: repeat(15, 1fr) / repeat(6, 1fr);
-    margin: 10px;
-    gap: 10px;
+  /* Overlap elements */
+  display: grid;
+  position: relative;
+  max-width: 100%;
+  grid-template: repeat(15, 1fr) / repeat(6, 1fr);
+  margin: 10px;
+  gap: 10px;
 }
 
 .header2 {
-    background-color: chocolate;
-    grid-area: 1 / 1 / 4 / 7;
+  background-color: chocolate;
+  grid-area: 1 / 1 / 4 / 7;
 }
 
 .nav2 {
-    background-color: crimson;
-    grid-area: 4 / 1 / 6 / 7;
+  background-color: crimson;
+  grid-area: 4 / 1 / 6 / 7;
 }
 
 .left2 {
-    background-color: deeppink;
-    grid-area: 6 / 1 / 12  / 4;
+  background-color: deeppink;
+  grid-area: 6 / 1 / 12 / 4;
 }
 
 .right2 {
-    background-color: wheat;
-    grid-area: 6 / 4 / 12 / 7;
+  background-color: wheat;
+  grid-area: 6 / 4 / 12 / 7;
 }
 
 .overlap {
-    background-color: palegreen;
-    grid-area: 7/ 3  / 11 / 5;
+  background-color: palegreen;
+  grid-area: 7/ 3 / 11 / 5;
 }
 
 .footer2 {
-    background-color: coral;
-    grid-area: 12 / 1 / 16 / 7;
+  background-color: coral;
+  grid-area: 12 / 1 / 16 / 7;
 }
-
-

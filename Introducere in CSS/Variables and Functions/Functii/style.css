@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --body-background: #6b4a2e;
+  --color-h1: white;
+}
+
+body {
+  background: var(--body-background);
+}
+
+h1 {
+  text-align: center;
+  color: var(--color-h1);
+}
+
+main {
+  border: 2px dashed;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.card {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 30rem;
+  margin: 1rem;
+  border-radius: 20px;
+  border: 2px solid red;
+  overflow: hidden;
+}
+
+/* url este o functie ! */
+
+/* doar imaginea se editeaza aici */
+.description-card {
+  background-image: url(assets/google\ mkoavzy.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.descriere {
+  border-top: 5px double gray;
+  margin: 1rem;
+  border-radius: 15px;
+}
+
+.card p {
+  font-weight: bold;
+  color: var(--color-h1);
+  padding: 1rem;
+}
+
+.calc {
+  border: 2px solid blue;
+  margin: 3rem;
+  width: 80%;
+}
+/* NU pot scadea rem din % */
+.calc ul {
+  margin: calc(10% - 1.5rem);
+}
+
+section {
+    margin: 2rem;
+  border: 5px solid black;
+  height: calc(50vh - 80px);
+  /* 1vh = 1% din înălțimea ferestrei
+     100vh = întreaga înălțime vizibilă
+     50vh = jumătate din ecran */
+
+     /* 100vh - 80px inseamna ca din 100vh am luat 80px pentru header */
+     /* de ex pun height: calc(100vh - 120px); acesta functie o pun pe mian de ex,
+      100vh este toata pagina dintre care se scade 120px dintre care sa zicem ca 
+      60px este pentru header si 60px pentru footer.
+      */
+}
+
+.min-max {
+    
+}

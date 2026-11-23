@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12px;
+}
+
+header {
+  text-align: center;
+  margin: 1rem;
+}
+
+main {
+  margin: 1rem;
+}
+
+.list-product {
+  display: grid;
+  gap: 2rem;
+  margin: 1rem;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  border-radius: 20px;
+  --main-list-product-bg: green; /* Aceasta este o variabila (este definita) !!!*/
+  background-color: var(--main-list-product-bg);
+}
+
+/* Funcția var()permite ca variabila CSS specificată să fie utilizată ca valoare a unei proprietăți. */
+
+:root {
+  /* --card-one-background-color: #2a1e4d; */
+  /* L-am comentat pentru ca am pus rezerve de culori la clasa one */
+  --card-two-background-color: #5a3b8c;
+  --important-bg-color: #3e5a3f;
+  --rezerva-culori-1: red;
+  --rezerva-culori-2: yellow;
+  /* Acestea sunt pentru global*/
+}
+
+.card {
+  /* Acestea sunt pentru local adica aceste variabile sunt valabile doar pentru clasa card */
+  --custom-color-card: aqua;
+  --main-list-product-card-color: var(--custom-color-card);
+  background-color: var(--main-list-product-card-color);
+  width: 50%;
+  height: 10rem;
+  margin: 1rem;
+  border-radius: 10px 0 10px 0;
+}
+
+.one {
+  background: var(
+    --card-one-background-color,
+    var(--rezerva-culori-1, var(--rezerva-culori-2))
+  );
+  /* Am adaugat rezerve de culori */
+}
+
+.two {
+  background: var(--card-two-background-color);
+  /* Acestea sunt culori la global */
+}
+
+.button {
+  background-color: #d97706;
+  --button-hover-bg: #f4d6b0;
+}
+
+.button:hover,
+button:focus {
+  transform: scale(1.1);
+  background: var(--button-hover-bg);
+}
+
+.important {
+  --important-bg-color: #ff6b6b;
+  background: var(--important-bg-color);
+  /* Acesta este culoare locala */
+}
+
+/* 
+Mai multe exemple de variabile in root
+:root {
+--group-one-background-color: #AF5B5B;
+--group-two-background-color: #5BB0B0;
+--main-font-type: 'Helvetica Neue';
+--button-background-color: #7f9292;
+--button-text-color: #000;
+--button-hover-color: #b2bdbd;
+--main-header-color: #002626;
+--featured-artists-background-color: #709683;
+}
+*/
+
+@media (max-width: 500px) {
+  :root {
+    --card-two-background-color: purple;
+  --important-bg-color: lightgreen;
+  --rezerva-culori-1: darkred;
+  --rezerva-culori-2: lightyellow;
+  }
+  /* Am schimbat valorile culorilor */
+
+  .button {
+    --button-hover-bg: royalblue;
+  }
+}
+
+

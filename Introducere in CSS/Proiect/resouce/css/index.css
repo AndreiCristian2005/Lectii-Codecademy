@@ -1,0 +1,32 @@
+h1 {
+  background-image: url(./assets/pattern.webp);
+  color: palegoldenrod;
+  font-family: "Arial", sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+font-size: 32px;
+font-weight: bold;
+color: white;
+font-family: Helvetica;
+}
+
+.brushes {
+  background-color: aquamarine;
+  
+}
+
+p span {
+  font-weight: bold;
+  color: darkblue;
+}
+
+.frames {
+  background-color: pink;
+}
+
+.paint {
+    background-color: lightblue;
+}

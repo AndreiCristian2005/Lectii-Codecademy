@@ -48,16 +48,43 @@ linear — viteză constantă pe tot parcursul
 
 .delay {
   max-width: 300px;
-  transition-property: max-width, border-radius;
+  border-radius: 50%;
+  border: 2px solid red;
+
+  /* transition-property: max-width, border-radius;
   transition-duration: 0.3s;
   transition-timing-function: linear;
-  border-radius: 50%;
-  transition-delay: 250ms;
+  transition-delay: 250ms; */
+
+  transition:
+    max-width,
+    border-radius,
+    0.3s linear 250ms;
+  /* Se pot folosi cele patru declaratii intro singura linie
+   transition: max-height 0.3s linear 250ms.
+   Ordinea este in felul urmator:
+   - transition-property
+   - transition-duration
+   - transition-timing-function
+   - transition-delay
+   */
+
+   /* SAU pentru mai multe declaratii 
+   .button span, 
+   .button div, 
+   .button i {
+   transition: all 1.2s ease-out 0.2s; FOLOSIM all
+
+   all este, de asemenea, o proprietate de tranziție
+  validă care determină fiecare proprietate care se schimbă să treacă la o tranziție.
+   }
+ */
 }
 
 /* Delay specifică timpul de așteptare înainte de începerea tranziției. */
 
 .delay:hover {
   max-width: 200px;
-border-radius: 20px;
+  border-radius: 20px;
 }
+
